@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { CalculatorService } from '../calculator.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { CalculatorService } from '../calculator.service';
 })
 export class NumberInputComponent implements OnInit {
   @Input() enteredNumber = "";
+  @ViewChild('numberInput') numberInputElement: ElementRef;
 
   constructor(private calculatorService: CalculatorService) { }
 
@@ -17,6 +18,7 @@ export class NumberInputComponent implements OnInit {
   onClick() {
     this.calculatorService.addNumber(+this.enteredNumber);
     this.enteredNumber = "";
+    this.numberInputElement.nativeElement.focus();
   }
 
 }
