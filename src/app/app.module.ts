@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NumberListComponent } from './number-list/number-list.component';
 import { NumberInputComponent } from './number-input/number-input.component';
+import { DisplaySumComponent } from './display-sum/display-sum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NumberListComponent,
-    NumberInputComponent
+    NumberInputComponent,
+    DisplaySumComponent
   ],
   imports: [
     BrowserModule,

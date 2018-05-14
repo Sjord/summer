@@ -15,4 +15,8 @@ export class CalculatorService {
   addNumber(number: number) {
     this.numbers.push(number);
   }
+
+  getSum() : number {
+    return this.numbers.reduce((acc, val) => acc + val, 0);
+  }
 }
