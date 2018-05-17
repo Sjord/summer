@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let parts of splitNumbers()">
-    <span class="integer">{{ parts[0] }}</span>.<span class="fractional">{{ parts[1] }}</span>
+  <li *ngFor="let number of numbers">
+    <app-aligned-number number={{number}}></app-aligned-number>
   </li>
 </ul>

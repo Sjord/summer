@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NumberListComponent } from './number-list/number-list.component';
 import { NumberInputComponent } from './number-input/number-input.component';
 import { DisplaySumComponent } from './display-sum/display-sum.component';
+import { AlignedNumberComponent } from './aligned-number/aligned-number.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NumberListComponent,
     NumberInputComponent,
-    DisplaySumComponent
+    DisplaySumComponent,
+    AlignedNumberComponent
   ],
   imports: [
     BrowserModule,
