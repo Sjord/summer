@@ -15,10 +15,13 @@ export class NumberInputComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick() {
+  addNumber() {
     this.calculatorService.addNumber(+this.enteredNumber);
     this.enteredNumber = "";
     this.numberInputElement.nativeElement.focus();
   }
 
+  clearNumbers() {
+    this.calculatorService.clearNumbers();
+  }
 }

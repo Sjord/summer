@@ -1,2 +1,7 @@
-<input type="number" [(ngModel)]="enteredNumber" autofocus (keyup.enter)="onClick()" #numberInput>
-<button (click)="onClick()">OK</button>
+<div>
+    <input type="number" [(ngModel)]="enteredNumber" autofocus (keyup.enter)="addNumber()" #numberInput>
+    <button (click)="addNumber()">OK</button>
+</div>
+<div>
+    <button (click)="clearNumbers()">Clear</button>
+</div>

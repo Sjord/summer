@@ -8,7 +8,7 @@ import { CalculatorService } from '../calculator.service';
 })
 export class DisplaySumComponent implements OnInit {
 
-  constructor(private calculatorService: CalculatorService) { }
+  constructor(public calculatorService: CalculatorService) { }
 
   ngOnInit() {
   }
