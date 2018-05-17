@@ -1,5 +1,3 @@
-<ul>
-  <li *ngFor="let number of numbers">
-    <app-aligned-number number={{number}}></app-aligned-number>
-  </li>
-</ul>
+<div *ngFor="let number of numbers" class="number">
+  <app-aligned-number number={{number}}></app-aligned-number>
+</div>
