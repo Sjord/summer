@@ -16,4 +16,11 @@ export class NumberListComponent implements OnInit {
     this.numbers = this.calculatorService.getNumbers();
   }
 
+  splitNumbers() {
+    return this.numbers.map(number => {
+      let str = number.toString();
+      return str.split(".");
+    });
+  }
+
 }
